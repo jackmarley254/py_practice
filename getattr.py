@@ -15,7 +15,9 @@ class NestedAccessor:
                 return NestedAccessor(value)
             return value
         except KeyError:
-            raise AttributeError(f"'NestedAccessor' object has no attribute '{name}'")
+            raise AttributeError(f"'NestedAccessor' object has no
+                                 attribute '{name}'")
+
 
 # Example usage:
 data = {

@@ -11,6 +11,7 @@ class Person:
         else:
             return str(self)
 
+
 p = Person("Alice", 30)
 print(f"{p:short}")    # Output: Alice
-print(f"{p:detailed}") # Output: Alice (30 years old)
+print(f"{p:detailed}")  # Output: Alice (30 years old)
