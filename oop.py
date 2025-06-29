@@ -1,5 +1,4 @@
-# Object-Oriented Programming (OOP) Example in Python
-
+# Object-Oriented Programming (OOP)in Python
 # Define a class called Animal
 class Animal:
     # Constructor method to initialize the object
@@ -12,6 +11,8 @@ class Animal:
         print(f"{self.name} says {self.sound}")
 
 # Inheritance: Dog is a subclass of Animal
+
+
 class Dog(Animal):
     def __init__(self, name, breed):
         super().__init__(name, "Woof!")
@@ -21,6 +22,8 @@ class Dog(Animal):
         print(f"{self.name} is a {self.breed}")
 
 # Polymorphism: Cat has its own speak method
+
+
 class Cat(Animal):
     def __init__(self, name):
         super().__init__(name, "Meow!")
@@ -28,14 +31,17 @@ class Cat(Animal):
     def speak(self):
         print(f"{self.name} softly says {self.sound}")
 
+
 class Hen(Animal):
     def __init__(self, name):
         super().__init__(name, "Kuku!")
 
     def sing(self):
         print(f"{self.name} softly says {self.sound}")
-        
+
 # Create objects (instances)
+
+
 dog = Dog("Buddy", "Golden Retriever")
 cat = Cat("Whiskers")
 hen = Hen("Clara")
