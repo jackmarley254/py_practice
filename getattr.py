@@ -15,8 +15,7 @@ class NestedAccessor:
                 return NestedAccessor(value)
             return value
         except KeyError:
-            raise AttributeError(f"'NestedAccessor' object has no
-                                 attribute '{name}'")
+            raise AttributeError(f"'NestedAccessor' object has no attribute '{name}'")
 
 
 # Example usage:
@@ -36,4 +35,4 @@ nested = NestedAccessor(data)
 print(nested['user']['details']['city'])  # Output: Wonderland
 
 # Access using __getattr__
-print(nested.user.details.city)           # Output: Wonderland
+print(nested.user.details.city) # Output: Wonderland
