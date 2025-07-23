@@ -32,3 +32,13 @@ print("H is {}".format("lower" if islower("H") else "upper"))
 print("A is {}".format("lower" if islower("A") else "upper"))
 print("3 is {}".format("lower" if islower("3") else "upper"))
 print("g is {}".format("lower" if islower("g") else "upper"))
+
+a = "Hello"
+b = "World"
+c = a + b
+print(c)
+
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
