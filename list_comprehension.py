@@ -17,3 +17,16 @@ newlist = [x for x in fruits if "a" in x]
 
 print(newlist)
 print(fruits)
+
+#Set the values in the new list to upper case:
+newlist = [x.upper() for x in fruits]
+
+print(newlist)
+
+#You can set the outcome to whatever you like:
+newlist = ['hello' for x in fruits]
+print(newlist)
+
+#Return the item if it is not banana, if it is banana return orange.
+newlist = [x if x != "banana" else "orange" for x in fruits]
+print(newlist)
