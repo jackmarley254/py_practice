@@ -17,3 +17,4 @@ y = ("orange",)
 thistuple += y
 
 print(thistuple)
+#remember to include a comma after the item, otherwise it will not be identified as a tuple.
